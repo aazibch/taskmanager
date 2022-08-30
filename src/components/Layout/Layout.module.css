@@ -1,6 +1,9 @@
 .layout {
     margin: 0 auto;
     max-width: 37rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 5px;
 }

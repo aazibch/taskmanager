@@ -1,0 +1,67 @@
+.task {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0.5rem 0;
+}
+
+.task:first-of-type {
+    border-top: 1px solid #d3d3d3;
+}
+
+.plusIcon {
+    margin-top: 0.1rem;
+}
+
+.descInput {
+    background: #ffffff;
+    border-style: none;
+    resize: none;
+    outline: none;
+    flex-basis: 1 1 auto;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #202124;
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5rem;
+}
+
+.descInput_lineThrough {
+    text-decoration: line-through;
+}
+
+.checkbox {
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid #202124;
+    border-radius: 2px;
+    margin-top: 0.1rem;
+    cursor: pointer;
+}
+
+.checkbox:hover {
+    opacity: 0.8;
+}
+
+.checkbox_checked {
+    background: url('../../../assets/images/tick.png');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.1rem 0.3rem;
+    box-sizing: border-box;
+}
+
+.deleteButton:hover {
+    border-radius: 50%;
+    background-color: #d3d3d3;
+}

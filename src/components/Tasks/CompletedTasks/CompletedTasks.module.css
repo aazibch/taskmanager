@@ -1,0 +1,13 @@
+.toggle {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+.toggle:hover {
+    color: #525355;
+}
+
+.arrowIcon {
+    margin-right: 0.5rem;
+}
