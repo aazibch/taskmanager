@@ -2,6 +2,10 @@
 
 This project allows users to keep track of their tasks.
 
+## Demo
+
+The demo can be accessed at https://aazibch.github.io/taskmanager/.
+
 ## Details
 
 For a textarea element that expands according to the length of the its content, I used the [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize) package.
