@@ -8,7 +8,7 @@ The demo can be accessed at https://aazibch.github.io/taskmanager/.
 
 ## Details
 
-For a textarea element that expands according to the length of the its content, I used the [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize) package.
+For the task inputs, I needed textarea elements that expand according to the length of their content. For this, I used the [react-textarea-autosize](https://www.npmjs.com/package/react-textarea-autosize) package.
 
 All tasks are stored with a timestamp so that they are ordered according to the time they were created.
 
