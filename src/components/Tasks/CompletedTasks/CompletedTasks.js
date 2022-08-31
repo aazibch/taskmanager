@@ -34,7 +34,6 @@ function CompletedTasks(props) {
                             new={task.new}
                             completed={true}
                             taskChangeHandler={props.taskChangeHandler}
-                            taskKeyDownHandler={props.taskKeyDownHandler}
                             taskDeleteHandler={props.taskDeleteHandler}
                             taskUncheckHandler={props.taskUncheckHandler}
                         />

@@ -14,6 +14,11 @@ function App() {
     function taskChangeHandler(e, type, index) {
         let updatedTasks;
 
+        // Suppress newline character and remove focus from input when it is entered.
+        if (e.target.value.charCodeAt([e.target.value.length - 1]) === 10) {
+            return e.target.blur();
+        }
+
         if (type === 'incomplete') {
             updatedTasks = [...incompleteTasks];
 
@@ -47,13 +52,6 @@ function App() {
             };
 
             setCompletedTasks(updatedTasks);
-        }
-    }
-
-    function taskKeyDownHandler(e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            e.target.blur();
         }
     }
 
@@ -108,7 +106,6 @@ function App() {
             <IncompleteTasks
                 tasks={incompleteTasks}
                 taskChangeHandler={taskChangeHandler}
-                taskKeyDownHandler={taskKeyDownHandler}
                 taskDeleteHandler={taskDeleteHandler}
                 taskCheckHandler={taskCheckHandler}
             />
@@ -117,7 +114,6 @@ function App() {
                     tasks={completedTasks}
                     taskChangeHandler={taskChangeHandler}
                     taskDeleteHandler={taskDeleteHandler}
-                    taskKeyDownHandler={taskKeyDownHandler}
                     taskUncheckHandler={taskUncheckHandler}
                     showCompletedTasks={showCompletedTasks}
                     completedTasksToggleHandler={completedTasksToggleHandler}

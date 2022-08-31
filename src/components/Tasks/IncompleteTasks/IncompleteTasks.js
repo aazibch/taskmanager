@@ -14,7 +14,6 @@ function IncompleteTasks(props) {
                         new={task.new}
                         completed={false}
                         taskChangeHandler={props.taskChangeHandler}
-                        taskKeyDownHandler={props.taskKeyDownHandler}
                         taskDeleteHandler={props.taskDeleteHandler}
                         taskCheckHandler={props.taskCheckHandler}
                     />
